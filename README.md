@@ -1,4 +1,4 @@
-**I don't use jquery-simplecolorpicker anymore so I won't update this repository. If you have a well maintained fork, I will be happy to promote it here.**
+**Forked from (tkrotoff)[https://github.com/tkrotoff/jquery-simplecolorpicker]'s repo**
 
 # Very simple jQuery color picker
 
@@ -77,6 +77,12 @@ $('select[name="colorpicker"]').simplecolorpicker({
 - picker: show the colors inside a picker instead of inline (default: `false`)
 - pickerDelay: show and hide animation delay in milliseconds (default: `0`)
 
+#### Added Options
+
+- attachToInput: takes a jQuery input field (e.g: `$('#myInputField')`) to trigger the picker panel instead of the default icon button (default: `null`)
+- animationMethod: 'fade', 'scale', or 'none' - specifies the show/hide animation method of the picker panel (default: 'fade')
+- displayDirection: 'bottom' or 'top' - specifies whether the picker should appear over or under the input/icon (default: 'top')
+
 ## Browser support
 
 Simplecolorpicker supports all modern browsers starting with Internet Explorer 8 included.
@@ -103,6 +109,15 @@ For the explanations, read this [Google Groups discussion](https://groups.google
 ## Ruby on Rails
 
 A gem is available at https://github.com/tkrotoff/jquery-simplecolorpicker-rails
+
+## Changelog
+
+### Added
+  - 3 new options for more customization capabilities (check the **Options** segment above)
+
+### Changed
+  - Clicking the icon/input while the picker is shown will hide it (previously it would reanimate the showing effect)
+  - Multiple minor design changes to the picker
 
 ## Copyright and license
 
