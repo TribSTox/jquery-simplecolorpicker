@@ -62,7 +62,8 @@
             // <span class="color selected" title="Green" style="background-color: #7bd148;" role="button"></span>
             self.$select.find('> option').each(function() {
                 var $option = $(this);
-                var color = $option.val();
+                var colorslug = $option.val();
+                var color = $option.data('color');
 
                 var isSelected = $option.is(':selected');
                 var isDisabled = $option.is(':disabled');
@@ -90,7 +91,7 @@
                 var $colorSpan = $('<span class="color"' +
                     title +
                     ' style="background-color: ' + color + ';"' +
-                    ' data-color="' + color + '"' +
+                    ' data-color="' + colorslug + '"' +
                     selected +
                     disabled +
                     role + '>' +
